@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions_JavaScript</title>
+  </head>
+  <body>
+    <script>
+      /*function function1() {
+        console.log('hello');
+        console.log(2 + 2);  
+      }
+
+      function1();
+      */
+      /*A function lets us reuse code as many times as we want.
+      The word function creates a new function and then we choose a new for the function. 
+      Rules for function names:
+      1. Can't use special words 
+      Example: Function
+      2. Can't start with a number
+      3. Can't use special characters except: $, and _
+      Best practice = using camelCase
+      */
+
+      function calculateTax(parameter1) {
+        console.log(Math.floor(parameter1 * 0.1)); //Math.floor() is ideal when you need to round down to the nearest integer.  
+      } 
+      calculateTax(2000); //a parameter lets us put values in to a function to work with any value.
+      calculateTax(3567); //output = 356  
+    </script>
+  </body>
+</html>
