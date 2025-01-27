@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title> <!--Created the score for a simple rock-paper-scissors game using Javascript objects
+    Algorithm (Rock Paper Scissors)
+    When we click a button:
+      1. Computer randomly selects a move
+      2. Compare the moves to get the result 
+      3. Update a score
+      4. Display the result and score in a popup-->
+  </head> 
+  <body> 
+    <script>
+      /*const product = {
+        name: 'shirts', price: 1090 
+      } //An object groups multiple values together.
+      console.log(product); 
+      console.log(product.name);
+      console.log(product.price);
+
+      product.name = 'kaki shirts';
+      console.log(product); 
+      //objects make our code more organized. So, we group related values into one object. 
+
+      product.size = 'M';
+      console.log(product); 
+      
+      delete product.size;
+      console.log(product);*/
+
+      //console + log = console.log i.e. object + function = method
+      //console.log and Math.random are examples of method in JavaScript. 
+      /*Why we need the local storage: to save the previous score so that we can access it after the page is refreshed. Syntax: localStorage.setItem(name, value); it is a method. Example: localStorage.setItem('message', 'hello'); local storage only supports strings. So we have to convert our value into a string.  
+      To access the value we stored, or get it we use a different syntax: localStorage.getItem('message')
+      To change an object to a string we use this syntax: JSON.stringify(object)
+      */  
+     
+      console.log(typeof 'hello'.length); 
+      /* output: 5, 
+      The .length in 'hello'.length is a property of the string 'hello', not a method. 
+      Example with the property .toUpperCase: 
+      const word = 'hello';
+      console.log(word.toUpperCase()); Output: Hello  
+      */  
+
+      const userInput = 'hello';
+        if (userInput.toUpperCase() === 'HELLO') {
+          console.log('Match!');
+        }
+
+      const obj = {
+        message: 'Good job!',  
+        price: `$${799}` 
+      };
+
+      // const message = obj.message; saving the value of the property into a variable.
+      //The above syntax does the same thing as the following syntax: we call this way of writng destructuring. We use it when the property name and the variable name are the same. 
+      //It is an easier way to take properties out of an object.
+      //Short-hand property:  
+      const { message, price } = obj;   
+      console.log(obj); 
+      console.log(price);
+      
+      const object5 = {
+        //message: message
+        /*message,  
+        method: function function1() {
+          console.log('method');  
+        } */
+        method() {
+          console.log('method');
+        }
+      } 
+      console.log(object5);
+      object5.method() 
+      /* In summary: 
+      1. Objects = group related values together.
+      2. Added a score to  Rock Paper Scissors
+      3. Built-in objects (JSON, localStorage)
+      4. More details (null, auto-boxing, references)
+      5. Shortcuts (destructuring, shorthand property, shorthand method) 
+      */
+    </script>
+  </body>
+</html>
