@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+</head>
+<body>
+  <button>
+    hello
+  </button>
+  
+  <button class="js-button">
+    Second button
+  </button>    
+
+  <script>
+    /*Built-in Objects (objects provided by JavaScript)
+    console.log();
+    Math.random();
+    JSON.stringify(object);
+    localStorage.getItem(name); 
+    */ 
+    /*document.body.innerHTML = 'hello'; In this syntax document is a built-in object, body is an html element (html elements are objects in JS), and innerHTML is a property of the object body.*/
+    //console.log(document.body.innerHTML = 'hello'); 
+    console.log(document.title = 'Document_Object_Model'); 
+    //The document object represents/models the webpage. 
+    console.log(document.body); 
+    //We can have HTML elements inside JavaScript. The DOM combines JavaScript and HTML together.
+    //document.body.innerHTML = '<button>Good bye!</button>'; 
+    /*A method is a function that is saved inside an object. A very important method: document.querySelector(): It lets us get any element from the page and put it inside JavaScript
+    */ 
+    console.log(document.querySelector('button').innerHTML); 
+    const buttonElement = document.querySelector('.js-button'); 
+    //Since an object can be saved into a variable, we can save it like this.
+    //We name the variable buttonElement to make it clear there is an HTML element inside the variable. 
+    //.js-button is a CSS class selector.  
+    console.log(buttonElement);         
+  </script>
+</body>
+</html>
