@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a simple Todo List with JavaScript</title>
+    <link rel="stylesheet" href="Styles/11-a-simple-todo-list.css">
+  </head>
+  <body>
+    <p class="todo-title">Todo List Practice 1</p>
+    
+    <div class="todo-row"> 
+      <input class="js-todo-name1 todo-name" placeholder="Todo name">
+
+      <button class="add-button" onclick="
+        addTodo();
+      ">Add</button>
+    </div>
+
+    <div class="js-todo-list1 todo-list"></div>
+
+    <!--A simple todo-builder-->
+    <p class="todo-list-title">Todo List</p>
+
+    <div class="todo-row todo-input-row">
+      <input class="js-todo-name todo-name" placeholder="Todo name">
+
+      <input class="js-due-date due-date" type="date">  
+
+      <button class="add-button" onclick="
+        addTodo1();
+      ">Add</button>
+    </div>
+
+    <div class="js-todo-list todo-list">
+    </div>    
+
+    <script src="Scripts/11-a-simple-todo-list.js"></script> 
+  </body>
+</html>
